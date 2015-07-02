@@ -1,11 +1,33 @@
 <html>
-	<title>
-		Life Game by @adayswait
-	</title>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Life Game by @adayswait
+		</title>
+	</head>
 	<body>
-		<canvas id="lifegame" width="1024" height="768">
-			Your browser doesn't support HTML5 element canvas.
-		</canvas>
+		<style>
+			div.cvs
+			{
+				width:1024px;
+				height:768px;
+				margin:auto;
+			}
+			div.cvs p
+			{
+				text-align: center;
+			}
+		</style>
+		<div class="cvs">
+			<p>js+canvas实现的一个数学小游戏 详情点击 >> 
+				<a href="http://baike.baidu.com/view/162057.html" target="_blank">
+					生命游戏-百度百科
+				</a>
+			</p>
+			<canvas id="lifegame" width="1024" height="768">
+				Your browser doesn't support HTML5 element canvas.
+			</canvas>
+		</div>
 	</body>
 	<script src="LifeGame.js" type="text/javascript">
 		
