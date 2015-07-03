@@ -20,20 +20,24 @@
             {
                 width:610px;
                 height:30px;
-                margin: auto;
+                margin: auto
+                
             }
             /* 所有class为menu的div中的ul样式 */
             div.menu ul
             {
                 list-style:none; /* 去掉ul前面的符号 */
-                margin: 0px; /* 与外界元素的距离为0 */
+                margin:auto; /* 与外界元素的距离为0 */
                 padding: 0px; /* 与内部元素的距离为0 */
                 width: auto; /* 宽度根据元素内容调整 */
+                display:inline-block;
+
             }
             /* 所有class为menu的div中的ul中的li样式 */
             div.menu ul li
             {
                 float:left; /* 向左漂移，将竖排变为横排 */
+                
             }
             /* 所有class为menu的div中的ul中的a样式(包括尚未点击的和点击过的样式) */
             div.menu ul li a, div.menu ul li a:visited
@@ -67,21 +71,41 @@
 			{
 				text-align: center;
 			}
-			
+            #details
+            {
+                width:100%;
+                margin:auto;
+                
+            }
+			#blog
+            {
+               width:30%; height:200px; border:solid 50px #cccccc; float:left;background-color: #333333;
+            }
+            #info
+            {
+               width:30%; height:200px; border:solid 50px #cccccc; float:left;background-color: #333333;
+            }
         </style>
-        <h2 style="text-align:center">ABOUT</h2>
-        <div class="menu">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="projects.html">PROJECTS</a></li>
-                <li><a href="posts.html">POSTS</a></li>
-                <li><a href="lab.html">CC-LAB</a></li>
-                <li><a href="reading.html">READING</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-            </ul>
+        <div class="headbk">
+            <h2 style="text-align:center">ABOUT</h2>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="posts.html">POSTS</a></li>
+                    <li><a href="lab.html">CC-LAB</a></li>
+                    <li><a href="reading.html">READING</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </div>
         </div>
 		<div class="about">
 			<br>email : adayswait@vip.qq.com
 		</div> 
+        <div id="details">
+            <div id="blog">  aisdada </div>
+            <div id="info">hahahhaha </div>
+        </div>
+
     </body> 
 </html>
