@@ -1,0 +1,35 @@
+﻿<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Matrix Rain</title>
+        <style>
+            body{
+                overflow: hidden;
+                margin: 0;
+            }    
+        </style>
+    </head>
+    <body>
+    
+    <canvas id="matrix"></canvas>
+    <script>
+        var width = matrix.width =  window.screen.width;
+        var height = matrix.height =  window.screen.height;
+        var rainfield=matrix.getContext('2d');
+        var raindrop = Array(500).join(1).split('');
+        var rain = function () {
+            rainfield.fillStyle='rgba(0,0,0,0.1)';
+            rainfield.fillRect(0,0,width,height);
+            rainfield.fillStyle='#0000F0';
+            raindrop.map(function(value, index){
+            var text = String.fromCharCode(Math.random()*127);
+            var x = index * 10;
+            rainfield.fillText(text, x, value);
+            raindrop[index] = (value > 1000 + Math.random() * 1e4) ? 0 : value + 15;
+            rainfield.fillStyle='#'+raindrop[index];
+          });
+        };
+        setInterval(rain,20);
+    </script>
+    </body>
+</html>
