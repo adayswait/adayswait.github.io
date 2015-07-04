@@ -15,7 +15,7 @@ var generationGap=100;
 var world=document.getElementById("lifegame").getContext("2d");
 var worldSizex=lifegame.width/lifeSize;
 var worldSizey=lifegame.height/lifeSize;
-world.fillStyle="#0FFF00";
+world.fillStyle="#222222";
 		
 life=createLife(life,worldSizex,worldSizey);
 setInterval(time,generationGap);
