@@ -1,6 +1,6 @@
-﻿body
+﻿body,ul,div.footer p
 {
-	margin:0;padding:0;
+	margin:0 auto;padding:0;
 }
 header
 {
@@ -11,7 +11,7 @@ header
 }
 div.menu
 {
-	margin:-15px 10%;
+	margin:0px 10%;
 }
 div.menu li
 {
@@ -130,6 +130,7 @@ div.footer
 	background-color: #333333;
 	height:30px;
 	width:100%;
+	text-align: center;
 }
 p.rights
 {
