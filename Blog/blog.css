@@ -41,37 +41,29 @@ div.blog
 {
 	font-family: Helvetica;
 	float:left;
-	width:60%;
+	width:80%;
 	margin-top:20px;
 	margin-left: 10%;
 }
-p.blogline
+p.blogtitle
 {
 	text-align: center;
 	font-family: Helvetica;
 	font-size: 2em;
-	border-bottom: 1px solid #999999;
+	/*border-bottom: 1px solid #999999;*/
 }
 div.ablog a
 {
 	text-decoration: none;
 }
-div.ablog a:hover
-{
-	text-decoration: underline;
-}
-p.posttitle
-{
-	font-size: 1.5em;	
-}
 p.posttimeandtags
 {
 	font-size:0.8em;
 	color:#888888;
-	margin: -15px auto 0px 0px;
+	margin:0 auto;
 
 }
-p.blogindex
+p.blogdetails
 {
 	text-align:justify;
 	text-justify:inter-ideograph;
