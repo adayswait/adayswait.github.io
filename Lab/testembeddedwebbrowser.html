@@ -1,0 +1,39 @@
+<html>
+<body>
+	<button type="button" onclick="callCppFunction();">
+		js call C++ function
+	</button>
+	<button type="button" onclick="callCppFunctionWith1Arg();">
+		js call C++ function 1 argument
+	</button>
+	<button type="button" onclick="callCppFunctionWith2Arg();">
+		js call C++ function 2 argument
+	</button>
+</body>
+<script>
+	function callCppFunction(){
+		if(window.external.testFunction){
+			window.external.testFunction();
+			alert('call succeed');
+		}else{
+			alert("call failed");
+		}
+	}
+	function callCppFunctionWith1Arg(){
+		if(window.external.testFunction1Arg){
+			window.external.testFunction1Arg('testArgument');
+			alert('call succeed');
+		}else{
+			alert("call failed");
+		}
+	}
+	function callCppFunctionWith2Arg(){
+		if(window.external.testFunction2Arg){
+			window.external.testFunction2Arg('testArgument1','testArgument2');
+			alert('call succeed');
+		}else{
+			alert("call failed");
+		}
+	}
+</script>
+</html>
